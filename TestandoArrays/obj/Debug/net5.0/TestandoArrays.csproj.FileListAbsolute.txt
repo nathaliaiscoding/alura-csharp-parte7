@@ -1,0 +1,16 @@
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.csprojAssemblyReference.cache
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.AssemblyInfoInputs.cache
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.AssemblyInfo.cs
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.csproj.CoreCompileInputs.cache
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\TestandoArrays.exe
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\TestandoArrays.deps.json
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\TestandoArrays.runtimeconfig.json
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\TestandoArrays.runtimeconfig.dev.json
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\TestandoArrays.dll
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\ref\TestandoArrays.dll
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\bin\Debug\net5.0\TestandoArrays.pdb
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.dll
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\ref\TestandoArrays.dll
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.pdb
+C:\Users\Nathalia\OneDrive\Documents\Programacao\ALURA\alura-csharp-parte7\TestandoArrays\obj\Debug\net5.0\TestandoArrays.genruntimeconfig.cache
