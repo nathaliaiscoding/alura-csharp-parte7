@@ -19,7 +19,7 @@ namespace ByteBank.ByteBankModelos
 
             _itens[_proximaPosicao] = item;
             _proximaPosicao++;
-            Console.WriteLine($"Adicionando no índice {_proximaPosicao} conta {item.Agencia}/{item.Conta}");
+            Console.WriteLine($"Adicionando no índice {_proximaPosicao} numero {item.Agencia}/{item.Numero}");
         }
 
         private void VerificarCapacidade(int tamanhoNecessario)
@@ -47,5 +47,37 @@ namespace ByteBank.ByteBankModelos
             _itens = novoArray;
         }
 
+        public void Remover(ContaCorrente item)
+        {
+            int indiceItem = -1;
+
+            for (int i = 0; i < _proximaPosicao; i++)
+            {
+                ContaCorrente itemAtual = _itens[i];
+
+                if (itemAtual.Equals(item))
+                {
+                    indiceItem = i;
+                    break;
+                }
+            }
+
+            for (int i = indiceItem; i < _proximaPosicao - 1; i++)
+            {
+                _itens[i] = _itens[i + 1];
+            }
+
+            _proximaPosicao--;
+            _itens[_proximaPosicao] = null;
+        }
+        public void EscreverListaNaTela()
+        {
+            for (int i = 0; i < _proximaPosicao; i++)
+            {
+                ContaCorrente conta = _itens[i];
+                Console.WriteLine($"Conta no índice {i}: numero {conta.Agencia} {conta.Numero}");
+            }
+        }
     }
+
 }

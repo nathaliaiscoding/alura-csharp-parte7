@@ -9,6 +9,9 @@ namespace ByteBank.ByteBankSistemaAgencia
         {
             ListaDeContaCorrente lista = new ListaDeContaCorrente();
 
+            ContaCorrente conta = new ContaCorrente(111, 1111);
+
+            lista.Adicionar(conta);
             lista.Adicionar(new ContaCorrente(345, 23462));
             lista.Adicionar(new ContaCorrente(363, 22451));
             lista.Adicionar(new ContaCorrente(735, 23552));
@@ -25,6 +28,12 @@ namespace ByteBank.ByteBankSistemaAgencia
             lista.Adicionar(new ContaCorrente(735, 77534));
             lista.Adicionar(new ContaCorrente(735, 34436));
             lista.Adicionar(new ContaCorrente(735, 98867));
+
+            lista.EscreverListaNaTela();
+            Console.WriteLine("conta removida");
+            lista.Remover(conta);
+            lista.EscreverListaNaTela();
+            Console.ReadLine();
         }
     }
 }

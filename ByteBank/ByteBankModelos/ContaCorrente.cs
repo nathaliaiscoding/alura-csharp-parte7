@@ -14,7 +14,7 @@ namespace ByteBank.ByteBankModelos
         public int ContadorSaquesNaoPermitidos { get; private set; }
         public int ContadorTransferenciasNaoPermitidas { get; private set; }
         public int Agencia { get; }
-        public int Conta { get; }
+        public int Numero { get; }
         private double _saldo = 100; // se não for atribuído nenhum valor, ele atribui 0 (zero)
         public double Saldo
         {
@@ -84,24 +84,36 @@ namespace ByteBank.ByteBankModelos
         /// Cria uma instância de ContaCorrente com os argumentos utilizados.
         /// </summary>
         /// <param name="agencia">Representa o valor da propriedade <see cref="Agencia"> e deve possuir um valor maior que zero.</param>
-        /// <param name="conta">Representa o valor da propriedade <see cref="Conta"> e deve possuir um valor maior que zero.</param>
-        public ContaCorrente(int agencia, int conta)
+        /// <param name="numero">Representa o valor da propriedade <see cref="Numero"> e deve possuir um valor maior que zero.</param>
+        public ContaCorrente(int agencia, int numero)
         {
             if (agencia <= 0)
             {
                 throw new ArgumentException("O argumento agencia deve ser maior que 0.", nameof(agencia));
             }
 
-            if (conta <= 0)
+            if (numero <= 0)
             {
-                throw new ArgumentException("O argumento agencia deve ser maior que 0.", nameof(conta));
+                throw new ArgumentException("O argumento agencia deve ser maior que 0.", nameof(numero));
             }
 
             Agencia = agencia;
-            Conta = conta;
+            Numero = numero;
 
             TotalDeContasCriadas++;
             TaxaOperacao = 30 / TotalDeContasCriadas;
+        }
+
+        public override bool Equals(object obj)
+        {
+            ContaCorrente outraConta = obj as ContaCorrente;
+
+            if (outraConta == null)
+            {
+                return false;
+            }
+
+            return Numero == outraConta.Numero && Agencia == outraConta.Agencia;
         }
     }
 }
