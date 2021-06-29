@@ -7,6 +7,26 @@ namespace ByteBank.ByteBankSistemaAgencia
     {
         static void Main(string[] args)
         {
+            Lista<int> idades = new Lista<int>();
+
+            idades.AdicionarVarios(63, 15, 21, 50);
+            idades.Remover(15);
+
+            Lista<string> cursos = new Lista<string>();
+            cursos.AdicionarVarios("C# Parte 1", "C# Parte 2", "C# Parte 3");
+
+            Lista<ContaCorrente> contas = new Lista<ContaCorrente>();
+            contas.AdicionarVarios(new ContaCorrente(124, 54354), new ContaCorrente(201, 44354));
+
+            Console.WriteLine($"Lista de Idades: {idades}");
+            Console.WriteLine($"Lista de Cursos: {cursos}");
+            Console.WriteLine($"Lista de Contas: {contas}");
+
+            Console.ReadLine();
+
+        }
+        static void TestandoAdicionarVarios()
+        {
 
             ListaDeContaCorrente lista = new ListaDeContaCorrente();
 
