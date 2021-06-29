@@ -7,6 +7,24 @@ namespace ByteBank.ByteBankSistemaAgencia
     {
         static void Main(string[] args)
         {
+
+            ListaDeContaCorrente lista = new ListaDeContaCorrente();
+
+            lista.AdicionarVarios(
+                new ContaCorrente(100, 40010),
+                new ContaCorrente(101, 40011)
+            );
+
+            for (int i = 0; i < lista.Tamanho; i++)
+            {
+                ContaCorrente conta = lista.GetItemNoIndice(i);
+                Console.WriteLine($"{conta.Agencia}/{conta.Numero}");
+            }
+
+        }
+
+        static void TestandoListaDeContas()
+        {
             ListaDeContaCorrente lista = new ListaDeContaCorrente();
 
             ContaCorrente conta = new ContaCorrente(111, 1111);
